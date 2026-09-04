@@ -3,6 +3,7 @@ package com.sky.controller.admin;
 import com.sky.constant.MessageConstant;
 import com.sky.result.Result;
 import com.sky.utils.AliOssUtil;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,6 +21,7 @@ import java.util.UUID;
  */
 @RestController
 @RequestMapping("/admin/common")
+@Api(tags = "通用接口")
 public class CommonController {
 
     @Autowired
